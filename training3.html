@@ -1,0 +1,43 @@
+<html>
+    <link rel="stylesheet" href="training3.css">
+    <body>
+        <form action="https://httpbin.org/post" method="post">
+            <div class="form-row">
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" required placeholder="Name">
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone</label>
+                <input name="phone" id="phone" type="tel" required placeholder="999-999-999">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" required placeholder="email@email.com">
+            </div>
+            <div class="form-row">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="3"></textarea>
+            </div>
+            <div class="form-row">
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="choose">Choose</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="belgium">Belgium</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <p>Gender</p>
+                <div class="radio-container">
+                <label><input name="gender" type="radio" name="gender" value="female"> Female </label>
+                <label><input type="radio" name="gender" value="male"> Male </label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+            </div>
+            <div class="form-row">
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>
